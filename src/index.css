@@ -1,0 +1,122 @@
+
+  /* Dark mode styles */
+body.dark-mode {
+  background: #0F172A;
+  color: #F8FAFC;
+}
+
+body.dark-mode .card {
+  background: #1E293B;
+  color: #F1F5F9;
+  box-shadow: none;
+}
+
+body.dark-mode nav {
+  background: rgba(30, 41, 59, 0.8);
+  border-bottom: 1px solid #334155;
+}
+
+body.dark-mode button {
+  background: #334155;
+}
+
+.dark-toggle {
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  margin-left: auto;
+  cursor: pointer;
+}
+/* Make all headings white in dark mode */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6 {
+  color: #FFFFFF !important;   /* Ensure headings are visible in dark mode */
+}
+
+body.dark-mode nav a {
+  color: #F1F5F9 !important;
+}
+
+/* canvas: '#F9FAFB',     // Primary Background
+  charcoal: '#1F2937',   // Primary Text & Headings
+  driftwood: '#6B7280',  // Secondary Text & Details (Metadata)
+  emerald: '#10B981',    // Primary Accent / CTA
+  structure: '#E5E7EB',  // Borders & Dividers
+  white: '#FFFFFF',
+  emeraldHover: '#059669', // Darker shade for hover state */
+
+/* Main styles */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #F9FAFB ;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+button {
+  cursor: pointer;
+  background: #10B981;
+  border: none;
+  border-radius: 5px;
+  color: #FFFFFF;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  transition: background 0.3s ease;
+  margin: 5px;
+}
+button:hover {
+  background: #059669;
+  color: #FFFFFF;
+}
+button.delete {
+  background: #EF4444;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  color: #1F2937; 
+  font-weight: 700;
+  font-family: poppins, sans-serif;
+}
+
+/* Fade + Slide animation on load */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card{
+  animation: fadeUp 0.6s ease both;
+  background: #ffffff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin-bottom: 1rem;
+  color: #1F2937;
+}
+.card:hover {
+  transform: scale(1.01);  /* POP */
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+
+.form-container {
+  max-width: 700px;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  color: #3B82F6;
+}
+
