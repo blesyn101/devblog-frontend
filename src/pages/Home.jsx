@@ -42,6 +42,7 @@ function Home() {
     <>
         <NavBar />
         <h1>The Developer's Journal</h1>
+        <input type="text" placeholder="Search posts..." className="search-bar" />
         {posts.length === 0 && <p>No posts available, add a post.</p>}
         <div className="card">
         {posts.map(post => (

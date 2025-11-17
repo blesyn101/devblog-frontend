@@ -84,6 +84,16 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   font-family: poppins, sans-serif;
 }
+.search-bar {
+  width: 100%;
+  max-width: 400px;
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+  border: 1px solid #D1D5DB;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #1F2937;
+}
 
 /* Fade + Slide animation on load */
 @keyframes fadeUp {
